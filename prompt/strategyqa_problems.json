@@ -1,0 +1,54 @@
+[
+    {
+        "role": "system",
+        "content": "Answer each question only with 'yes' or 'no'."
+    },
+    {
+        "role": "user",
+        "content": "Do hamsters provide food for any animals?"
+    },
+    {
+        "role": "assistant",
+        "content": "yes"
+    },
+    {
+        "role": "user",
+        "content": "Could Brooke Shields succeed at University of Pennsylvania?"
+    },
+    {
+        "role": "assistant",
+        "content": "yes"
+    },
+    {
+        "role": "user",
+        "content": "Hydrogen's atomic number squared exceeds number of Spice Girls?"
+    },
+    {
+        "role": "assistant",
+        "content": "no"
+    },
+    {
+        "role": "user",
+        "content": "Is it common to see frost during some college commencements?"
+    },
+    {
+        "role": "assistant",
+        "content": "yes"
+    },
+    {
+        "role": "user",
+        "content": "Could a llama birth twice during War in Vietnam (1945-46)?"
+    },
+    {
+        "role": "assistant",
+        "content": "no"
+    },
+    {
+        "role": "user",
+        "content": "Would a pear sink in water?"
+    },
+    {
+        "role": "assistant",
+        "content": "no"
+    }
+]
