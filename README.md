@@ -25,9 +25,11 @@ Accuracy Comparison: LLM only vs LLM + MASK
 By decomposing the question, the model identifies the correct answer.
 ```
 
+## Example: LLM-only vs LLM + MASK reasoning (MQuAKE-CF-3k-v2)
 
-
-LLM-only may fail on multi-hop questions even if the information exists in pretraining.
+![Example](images/MQuAKE-CF-3k-v2_example.png)
+By decomposing the question, the model identifies the correct answer.
+```
 
 LLM + MASK solves complex questions by decomposing them into sub-questions, producing correct step-by-step reasoning.
 
