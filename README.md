@@ -22,8 +22,9 @@ Accuracy Comparison: LLM only vs LLM + MASK
 ## Example: LLM-only vs LLM + MASK reasoning (StrategyQA)
 
 ![Example](images/StrategyQA_example.png)
+By decomposing the question, the model identifies the correct answer.
 ```
-✅ Correct answer: By decomposing the question, the model identifies the correct answer.
+
 
 
 LLM-only may fail on multi-hop questions even if the information exists in pretraining.
