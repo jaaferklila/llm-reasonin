@@ -36,13 +36,13 @@ pip install -r requirements.txt
 
 # 2️ Run the experiments
 python LLM_Only.py --model_name <model_name> --dataset_name <dataset_name>
-
+```
 
 Example:
 For the StrategyQA dataset with the LLaMA model:
 ```bash
 python LLM_Only.py --model_name llama3.1-8b --dataset_name strategyqa
-
+```
 
 Results:
 
