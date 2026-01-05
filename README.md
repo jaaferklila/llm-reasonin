@@ -1,24 +1,34 @@
-# Model Results
+# LLM Reasoning Experiments
 
-## StrategyQA
+This repository contains experiments comparing LLM strategies on different datasets.
+
+---
+
+## Model Results
+
+### StrategyQA
 
 Accuracy Comparison: LLM only vs LLM + MASK  
 
 ![Accuracy StrategyQA](images/StrategyQA.png)
 
-## MQuAKE-CF-3k-v2
+### MQuAKE-CF-3k-v2
 
-Comparison: LLM only vs LLM + MASK  
+Accuracy Comparison: LLM only vs LLM + MASK  
 
 ![MQuAKE-CF-3k-v2](images/MQuAKE-CF-3k-v2.png)
 
+---
+
 ## Reproducing the Results
 
-If you want to reproduce the results from this project, follow these steps:
-
-### 1️⃣ Create the Conda environment
+Follow these steps to reproduce the results:
 
 ```bash
+# 1️Create the Conda environment
 conda create -n llmreasoning python=3.10
 conda activate llmreasoning
 pip install -r requirements.txt
+
+# 2️ Run the experiments
+python LLM_Only.py --model_name <model_name> --dataset_name <dataset_name>
