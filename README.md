@@ -19,40 +19,11 @@ Accuracy Comparison: LLM only vs LLM + MASK
 ![MQuAKE-CF-3k-v2](images/MQuAKE-CF-3k-v2.png)
 
 ---
-## Example: LLM-only vs LLM + MASK reasoning (MQuAKE-CF-3k-v2)
+## Example: LLM-only vs LLM + MASK reasoning (StrategyQA)
 
-**Question:** "Where did the author of the Earthsea series pass away?"
-
-- **LLM-only approach:**  
-```bash
-question = "Where did the author of the Earthsea series pass away?"
-answer = generate_answer_with_reasoning(question, llmtokenizer, model, max_new_tokens=200)
-print("Answer:", answer)
-Output:
-Answer: Seattle, Washington, USA
-Evidence: Ursula K. Le Guin, the American author of the Earthsea series, passed away on January 22, 2018, at the age of 88, in Portland, Oregon, but she had lived in Portland for many years, and had also lived in Seattle.
+![Example](images/StrategyQA_example.png)
 ```
-❌ Wrong answer: The model gave the place where the author lived rather than where she actually passed away.
-´´´
-LLM + MASK (compositional reasoning):
-```bash
-Step 1: "Who is the author of the Earthsea series?" → Ursula K. Le Guin
-
-question = "Who is the author of the Earthsea series?"
-answer = generate_answer_with_reasoning(question, llmtokenizer, model, max_new_tokens=200)
-print("Answer:", answer)
-Answer: Ursula K. Le Guin
-Evidence: Ursula Kroeber Le Guin was an American novelist, critic, essayist, and poet best known for her works of speculative fiction. Her notable works include the Earthsea series.
-
-Step 2: "Where did Ursula K. Le Guin pass away?" → Portland, Oregon
-
-question = "Where did Ursula K. Le Guin pass away?"
-answer = generate_answer_with_reasoning(question, llmtokenizer, model, max_new_tokens=200)
-print("Answer:", answer)
-Answer: Portland, Oregon
-Evidence: Ursula Kroeber Le Guin (1929-2018) was an American novelist. Le Guin died on January 22, 2018, at the age of 88, in her home in Portland, Oregon.
-```
-✅ Correct answer: By decomposing the question, the model identifies the correct death place.
+✅ Correct answer: By decomposing the question, the model identifies the correct answer.
 
 
 LLM-only may fail on multi-hop questions even if the information exists in pretraining.
