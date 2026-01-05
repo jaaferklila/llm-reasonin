@@ -33,8 +33,10 @@ cd llm-reasonin
 conda create -n llmreasoning python=3.10
 conda activate llmreasoning
 pip install -r requirements.txt
-
+```
 # 2️ Run the experiments
+For the LLM only run:
+```bash
 python LLM_Only.py --model_name <model_name> --dataset_name <dataset_name>
 ```
 
