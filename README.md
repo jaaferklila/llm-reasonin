@@ -25,6 +25,10 @@ Accuracy Comparison: LLM only vs LLM + MASK
 Follow these steps to reproduce the results:
 
 ```bash
+# Clone the repository
+git clone https://github.com/jaaferklila/-llm-reasonin.git
+cd llm-reasonin
+
 # 1️Create the Conda environment
 conda create -n llmreasoning python=3.10
 conda activate llmreasoning
