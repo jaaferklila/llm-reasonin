@@ -24,14 +24,14 @@ Accuracy Comparison: LLM only vs LLM + MASK
 **Question:** "Where did the author of the Earthsea series pass away?"
 
 - **LLM-only approach:**  
-´´´
+```bash
 question = "Where did the author of the Earthsea series pass away?"
 answer = generate_answer_with_reasoning(question, llmtokenizer, model, max_new_tokens=200)
 print("Answer:", answer)
 Output:
 Answer: Seattle, Washington, USA
 Evidence: Ursula K. Le Guin, the American author of the Earthsea series, passed away on January 22, 2018, at the age of 88, in Portland, Oregon, but she had lived in Portland for many years, and had also lived in Seattle.
-
+```
 ❌ Wrong answer: The model gave the place where the author lived rather than where she actually passed away.
 ´´´
 LLM + MASK (compositional reasoning):
