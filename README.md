@@ -21,7 +21,7 @@ Accuracy Comparison: LLM only vs LLM + MASK
 ---
 ## Example: LLM-only vs LLM + MASK reasoning (StrategyQA)
 
-![Example](images/StrategyQA_example.png)
+![Example](images/strategyqa_example.png)
 By decomposing the question, the model identifies the correct answer.
 ```
 
