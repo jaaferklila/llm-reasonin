@@ -35,7 +35,7 @@ Evidence: Ursula K. Le Guin, the American author of the Earthsea series, passed 
 ❌ Wrong answer: The model gave the place where the author lived rather than where she actually passed away.
 ´´´
 LLM + MASK (compositional reasoning):
-
+```bash
 Step 1: "Who is the author of the Earthsea series?" → Ursula K. Le Guin
 
 python
@@ -49,18 +49,15 @@ Evidence: Ursula Kroeber Le Guin was an American novelist, critic, essayist, and
 
 Step 2: "Where did Ursula K. Le Guin pass away?" → Portland, Oregon
 
-python
-Copier le code
 question = "Where did Ursula K. Le Guin pass away?"
 answer = generate_answer_with_reasoning(question, llmtokenizer, model, max_new_tokens=200)
 print("Answer:", answer)
 Output:
 Answer: Portland, Oregon
 Evidence: Ursula Kroeber Le Guin (1929-2018) was an American novelist. Le Guin died on January 22, 2018, at the age of 88, in her home in Portland, Oregon.
-
+```
 ✅ Correct answer: By decomposing the question, the model identifies the correct death place.
 
-Key Takeaway:
 
 LLM-only may fail on multi-hop questions even if the information exists in pretraining.
 
