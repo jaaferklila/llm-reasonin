@@ -25,7 +25,6 @@ Accuracy Comparison: LLM only vs LLM + MASK
 
 - **LLM-only approach:**  
 
-```python
 question = "Where did the author of the Earthsea series pass away?"
 answer = generate_answer_with_reasoning(question, llmtokenizer, model, max_new_tokens=200)
 print("Answer:", answer)
