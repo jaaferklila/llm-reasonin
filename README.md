@@ -38,12 +38,9 @@ LLM + MASK (compositional reasoning):
 ```bash
 Step 1: "Who is the author of the Earthsea series?" → Ursula K. Le Guin
 
-python
-Copier le code
 question = "Who is the author of the Earthsea series?"
 answer = generate_answer_with_reasoning(question, llmtokenizer, model, max_new_tokens=200)
 print("Answer:", answer)
-Output:
 Answer: Ursula K. Le Guin
 Evidence: Ursula Kroeber Le Guin was an American novelist, critic, essayist, and poet best known for her works of speculative fiction. Her notable works include the Earthsea series.
 
@@ -52,7 +49,6 @@ Step 2: "Where did Ursula K. Le Guin pass away?" → Portland, Oregon
 question = "Where did Ursula K. Le Guin pass away?"
 answer = generate_answer_with_reasoning(question, llmtokenizer, model, max_new_tokens=200)
 print("Answer:", answer)
-Output:
 Answer: Portland, Oregon
 Evidence: Ursula Kroeber Le Guin (1929-2018) was an American novelist. Le Guin died on January 22, 2018, at the age of 88, in her home in Portland, Oregon.
 ```
