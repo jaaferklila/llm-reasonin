@@ -38,7 +38,7 @@ Follow these steps to reproduce the results:
 
 ```bash
 # Clone the repository
-git clone https://github.com/jaaferklila/-llm-reasonin.git
+git clone https://github.com/jaaferklila/llm-reasonin.git
 cd llm-reasonin
 
 # 1️Create the Conda environment
