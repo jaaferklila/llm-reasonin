@@ -4,10 +4,6 @@ Paper link: Coming soon.
 This repository contains experiments comparing LLM strategies on different datasets.
 
 ---
-
-
-
----
 ## Example: LLM-only vs LLM + MASK reasoning (StrategyQA)
 
 ![Example](images/strategyqa_example.png)
