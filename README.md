@@ -5,19 +5,7 @@ This repository contains experiments comparing LLM strategies on different datas
 
 ---
 
-## Model Results
 
-### StrategyQA
-
-Accuracy Comparison: LLM only vs LLM + MASK  
-
-![Accuracy StrategyQA](images/StrategyQA.png)
-
-### MQuAKE-CF-3k-v2
-
-Accuracy Comparison: LLM only vs LLM + MASK  
-
-![MQuAKE-CF-3k-v2](images/MQuAKE-CF-3k-v2.png)
 
 ---
 ## Example: LLM-only vs LLM + MASK reasoning (StrategyQA)
@@ -32,7 +20,19 @@ By decomposing the question, the model identifies the correct answer.
 
 
 LLM + MASK solves complex questions by decomposing them into sub-questions, producing correct step-by-step reasoning.
+## Model Results
 
+### StrategyQA
+
+Accuracy Comparison: LLM only vs LLM + MASK  
+
+![Accuracy StrategyQA](images/StrategyQA.png)
+
+### MQuAKE-CF-3k-v2
+
+Accuracy Comparison: LLM only vs LLM + MASK  
+
+![MQuAKE-CF-3k-v2](images/MQuAKE-CF-3k-v2.png)
 ## Reproducing the Results
 
 Follow these steps to reproduce the results:
